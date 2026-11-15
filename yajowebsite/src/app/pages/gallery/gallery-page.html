@@ -1,0 +1,9 @@
+<section class="page-wrap gallery-page">
+  <span class="eyebrow">THE VISUAL ARCHIVE</span><h1 class="page-heading">Gallery<span>.</span></h1>
+  <p class="page-intro">Portraits, places, and moments from the world around the music. Photos will find their home here.</p>
+  <div class="gallery-grid">
+    @for (photo of photos; track photo.number) {
+      <article class="photo-card" [class.tall]="photo.tall"><div class="photo-surface" [style.--tone]="photo.tone"><span>PHOTO {{ photo.number }}</span></div><p>{{ photo.caption }}</p></article>
+    }
+  </div>
+</section>

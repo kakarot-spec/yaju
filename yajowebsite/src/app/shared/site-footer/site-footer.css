@@ -1,0 +1,5 @@
+    .site-footer{min-height:112px;padding:24px max(24px,calc((100vw - 1120px)/2));border-top:1px solid #38352f;display:flex;align-items:center;justify-content:space-between;gap:18px;color:#aaa49b}
+    .wordmark{color:#f4f0e9;font:700 1rem 'DM Sans',sans-serif;letter-spacing:.16em;text-decoration:none}.wordmark span{color:#d8a96e;font:400 .5rem 'DM Mono',monospace;vertical-align:top}
+    p,small{font:400 .68rem 'DM Mono',monospace;letter-spacing:.04em}small{color:#77736c}
+    @media(max-width:600px){.site-footer{padding:24px 20px;flex-wrap:wrap}.site-footer p{order:3;width:100%;margin:0}}
+  

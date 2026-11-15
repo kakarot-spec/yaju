@@ -1,0 +1,15 @@
+    <aside class="music-dock" aria-label="Music player">
+      <div class="track-mark" aria-hidden="true">♫</div>
+      <div class="track-copy"><span class="eyebrow">NOW PLAYING</span><strong>{{ isPlaying ? 'Yajoo on YouTube' : 'A little music?' }}</strong></div>
+      @if (videoId) {
+        <button type="button" class="play-button" (click)="togglePlayback()" [attr.aria-label]="isPlaying ? 'Pause music' : 'Play music'">
+          {{ isPlaying ? 'Ⅱ PAUSE' : '▶ PLAY' }}
+        </button>
+      } @else {
+        <span class="waiting">YOUTUBE LINK COMING SOON</span>
+      }
+      @if (isPlaying && videoId) {
+        <iframe class="audio-frame" [src]="embedUrl" title="Yajoo music player" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      }
+    </aside>
+  

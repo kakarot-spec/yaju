@@ -1,0 +1,7 @@
+    .music-dock{position:fixed;z-index:5;right:24px;bottom:22px;display:flex;align-items:center;gap:14px;padding:12px 15px;background:#1b1a17;border:1px solid #38352f;box-shadow:0 10px 32px #0008}
+    .track-mark{width:34px;height:34px;display:grid;place-items:center;background:#d8a96e;color:#11110f;font-size:1.2rem}
+    .track-copy{display:flex;flex-direction:column;gap:4px}.eyebrow{color:#d8a96e;font:500 .57rem 'DM Mono',monospace;letter-spacing:.12em}.track-copy strong{font-size:.75rem;font-weight:500}
+    .play-button{padding:9px 12px;border:1px solid #d8a96e;background:transparent;color:#d8a96e;font:500 .64rem 'DM Mono',monospace;cursor:pointer}.play-button:hover{background:#d8a96e;color:#11110f}.waiting{color:#77736c;font:400 .57rem 'DM Mono',monospace;letter-spacing:.04em}
+    .audio-frame{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+    @media(max-width:600px){.music-dock{right:12px;bottom:12px;left:12px;justify-content:space-between}.waiting{font-size:.5rem}}
+  
