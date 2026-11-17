@@ -1,0 +1,28 @@
+<section class="press-page page-wrap">
+  <header class="press-header">
+    <span class="eyebrow">MEDIA & STORIES</span>
+    <h1 class="page-heading">In the <em>Press</em><span>.</span></h1>
+    <p class="page-intro">
+      Features, interviews, and stories about Yaju Acharya and her music.
+    </p>
+  </header>
+
+  <div class="press-grid">
+    @for (story of stories; track story.number) {
+      <article class="press-card">
+        @if (story.image) {
+          <img class="press-image" [src]="story.image" [alt]="story.title" loading="lazy" />
+        } @else {
+          <div class="press-image-placeholder" role="img" [attr.aria-label]="'Photo placeholder ' + story.number">
+            <span class="placeholder-icon" aria-hidden="true">＋</span>
+            <span>ADD PHOTO {{ story.number }}</span>
+          </div>
+        }
+        <div class="press-card-copy">
+          <span class="eyebrow">FEATURE · {{ story.number }}</span>
+          <h2>{{ story.title }}</h2>
+        </div>
+      </article>
+    }
+  </div>
+</section>

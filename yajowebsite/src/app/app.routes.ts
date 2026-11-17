@@ -3,6 +3,7 @@ import { HomePage } from './pages/home/home-page';
 import { GalleryPage } from './pages/gallery/gallery-page';
 import { ProjectsPage } from './pages/projects/projects-page';
 import { ContactPage } from './pages/contact/contact-page';
+import { PressPage } from './pages/press/press-page';
 import { MissingProjectLinkPage } from './pages/missing-project-link/missing-project-link-page';
 
 export const routes: Routes = [
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: 'projects', component: ProjectsPage, title: 'Projects — Yajoo' },
   { path: 'project-link-unavailable', component: MissingProjectLinkPage, title: 'Project Link Unavailable — Yajoo' },
   { path: 'contact', component: ContactPage, title: 'Contact — Yajoo' },
+  { path: 'press', component: PressPage, title: 'In the Press — Yajoo' },
   { path: '**', redirectTo: '' },
 ];

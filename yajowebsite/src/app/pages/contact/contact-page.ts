@@ -13,7 +13,7 @@ export class ContactPage {
 
   protected sendMessage(): void {
     const body = `From: ${this.message.name} (${this.message.email})\n\n${this.message.body}`;
-    const mailto = `mailto:hello@yajoo.music?subject=${encodeURIComponent(this.message.subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:yajuflutistacharya@gmail.com?subject=${encodeURIComponent(this.message.subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
   }
 }

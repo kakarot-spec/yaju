@@ -5,6 +5,5 @@
     nav a,.header-note { color:#aaa49b; font:400 .7rem 'DM Mono',monospace; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
     nav a:hover,nav a.active { color:#d8a96e; }
     .header-note { font-size:.62rem; }
-    @media(max-width:720px){.site-header{height:auto;min-height:76px;padding:18px 20px;flex-wrap:wrap;gap:18px}.header-note{display:none}nav{gap:16px}nav a{font-size:.62rem}}
+    @media(max-width:720px){.site-header{height:auto;min-height:76px;padding:18px 20px;flex-wrap:wrap;gap:18px}.header-note{display:none}nav{gap:16px;flex-wrap:wrap;row-gap:12px}nav a{font-size:.62rem}}
     @media(max-width:420px){.site-header{align-items:flex-start;flex-direction:column}nav{width:100%;justify-content:space-between}}
-  

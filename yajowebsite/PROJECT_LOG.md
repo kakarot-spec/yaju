@@ -25,6 +25,7 @@ This note tracks the requested work, implementation decisions, changes, and issu
 
 ## Modifications
 
+- Replaced the generic Home About copy with a shortened first-person biography for Yaju Acharya, including his Bhaktapur roots, classical and jazz training, former membership in Fret, and cross-cultural musical focus. Kept the About section in its original position and updated its role and location details.
 - Replaced the Angular starter welcome screen with the Yajoo site shell and home page.
 - Registered page routes and page titles in `src/app/app.routes.ts`.
 - Kept the existing Angular dependencies and SSR configuration.
@@ -46,17 +47,23 @@ This note tracks the requested work, implementation decisions, changes, and issu
 - Split Home, Gallery, Projects, Contact, Site Header, Site Footer, and Music Player into sibling `.ts`, `.html`, and `.css` files. Verified each relative template/style path with a production build after each extraction.
 - Updated the Home featured-project and archive image frames to contain images without cropping, and removed hover zoom so the full image remains visible across source aspect ratios.
 - Added a 404-style missing-project-link page with a project-specific apology and return link. Routed all five YouTube buttons on Projects to that page until the real video links are supplied.
+- Added seven user-selected archive cards for the Ethnomusicologist collaboration, Echoes in the Valley, the Club 10X event, Music for Medicine, two separate Katjazz posters, and the Music for Health fundraiser. The initial order was increasing by date; the user later requested newest first. The Music for Health date uses 7 August 2026 per the user.
+- Updated the Home About section with Yaju Acharya's full supplied biography and described Batas as an original song created by Yaju.
+- Added the responsive In the Press page, with three photo placeholders and editable headline labels, and added its route and navigation link.
+- Reordered Projects newest first; changed both 29 January Katjazz entries to 2026; dated The Last Call and Tulsi to 2024; renamed Nightbus Sessions to Tulsi and credited sound design to Yaju Acharya.
+- Changed the Contact email and all form mail destinations to `yajuflutistacharya@gmail.com`.
+- Documented the existing Home edits and user supplied media (`a.jpg`, `batas.jpg`, `DSCF6222.JPG`, and `yajoo live.JPG`) in `DOCUMENTATION.md`.
+- Verified the updated site with `npm run build`; Angular completed successfully and prerendered six static routes. Browser inspection and the requested name entry could not be completed because computer-use approval timed out.
 - The YouTube player cannot play Yajoo's music until a real YouTube video ID is supplied in the music player component.
-- The Projects and Contact pages currently use generic YouTube destinations and sample project details. Replace these with Yajoo's channel, actual releases, and contact email when available.
+- Project YouTube links remain placeholders until real channel or video links are supplied.
 - Gallery panels are placeholders until photo assets are provided.
-- The static Contact form depends on the visitor having an email app configured. The address `hello@yajoo.music` comes from the original code and should be confirmed.
+- The static Contact form depends on the visitor having an email app configured.
 - Hosting security headers are not configured here; set CSP, HSTS, and appropriate Trusted Types policy at the eventual production host.
 
 ## Pending from the user
 
 - YouTube video ID for the play button and Yajoo's channel URL.
 - Real project/release names and links.
-- Confirm whether `hello@yajoo.music` is still the correct contact address.
 - YouTube channel/video links and actual release details remain needed.
 - Gallery page can be updated with more of the original photos later.
 - Preferred visual style (to decide later).
